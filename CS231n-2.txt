@@ -1,0 +1,33 @@
+[ CS231n 2강 예습 ]
+
+(1) Data-driven approach 
+: image and labels 이용
+: Train, predict 함수 이용 
+- 학습 : 이미지와 레이블을 받아서 모델 도출 
+- 예측 : 모델과 테스트이미지를 넣고 레이블
+
+(2) Nearest Neighbor Classifier 
+: 지금은 아무도 이용하고 있지 않음, 현실에서 쓰면 안됨
+- 이유 : 떨어지는 정확성 (왜냐하면 distance 측정 자체가 정확성이 떨어짐 전혀 다른 이미지들을 동일하게 판단함)
+: test image 와 training image 를 하나하나 distance를 이용해서 비교 원소별로 비교한 후 합을 구함
+: L1 (Manhattan) distance 또는 L2 distance 이용
+: 트레이닝 셋의 데이터가 늘어나면 분류하는 시간도 늘어남 (트레이닝 속도보다 테스트 속도가 중요함)
+
+(3) K-Nearest Neighbor 
+: 다수결로 결정 (Nearest Neighbor보다 성능이 좋음)
+: test set은 함부로 사용하면 안됨, 최후의 보루 -> 마지막에 검토 겸 사용해야함 
+- Validation data 
+- Cross-Validation
+
+
+(4) < Linear Classification > 
+
+1. Image captioning : CNN(classify) + RNN(문장 구성) - 시퀀스 처리에 강한 네트워크
+ : 이미지 내의 모든 픽셀값에 대한 가중치를 곱하여 처리한 합
+ : 각각 다른 공간적 위치에 있는 “컬러”들을 카운팅한 것
+
+2. Parametric approach 접근법 
+ : 행렬연산 
+ - parameters(W) : 우리가 변경할 수 있는 부분, 이걸 조정해서 정확도를 높임 (최적값 찾아내기)
+ - 단점 : 색상에 너무 좌지우지된다 따라서 결과가 그렇게 좋지 않다는 한계가 있음, 흑백 사진에 적용 거의 불가
+ - 장점 : 사진 내 대상의 위치에는 전혀 영향을 받지 않음
