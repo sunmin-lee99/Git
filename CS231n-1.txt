@@ -1,0 +1,57 @@
+[ CS231n 1강 예습 ]
+
+(1) < CS231n > 
+: 딥러닝을 이용해서 비전 분야에 접근하는 방법에 대한 강의 (image classification에 많은 비중을 둠)
+
+
+(2) Vision History
+
+1. Vision Capacity
+ : 시각적인 능력
+
+2. 레오나르도 다빈치의 사진 모델 
+
+3. Vision Processing에 대한 실험 진행 
+
+4. 물체의 edge를 추출하는 실험 
+ : edge를 이용하여 물체의 모양을 캐치할 수 있을거라고 생각 
+
+5. First AI Lab 등장 
+
+6. Vision 책 출판
+ : Hierarchical Model은 지금의 딥러닝 방식과 매우 유사함
+
+7. 3D 모델을 인식하기 위한 방법론 제시됨 
+ : Generalized Cylinder, Pictorial Structure
+
+8. Coloful Image 사용하기 시작됨 
+
+9. Face Detection 연구 시작 
+ : 3D Modeling에서 Object Recognition으로 트랜드가 옮겨짐
+
+10. Important Feature Extract 
+ : 몇가지 특징들을 보고 object를 인식할 수 있는 사람의 능력에 기반
+
+11. Machine Learning 등장
+ : 자동화시키기 위해 기계 스스로의 학습 능력을 키우기 위한 연구
+
+12. 효율적인 알고리즘에 대한 Global Standard의 카테고리가 등장 
+
+13. CNN (Convolutional Neural Network) 뛰어난 성장을 보이며 등장 
+ : 하루아침에 완성된 것 아님
+ : 전에 나온 알고리즘과 유사하지만 더 뛰어나질 수 있었던 이유는 높아진 하드웨어 성능과 가용할 수 있는 데이터양의 증가 
+
+
+(3) 앞으로 연구가 필요한 주목할만한 분야들
+
+1. 3D modeling 
+ : 디테일한 부분들을 실시간으로 적용하기
+ 
+2. Visual genome 
+ : 이미지의 연관성 - 대상과 액션 을 찾아내기
+ 
+3. Give one picture and outcome a description 
+ : 사진을 보고 설명해내는 능력
+
+4. Explain the socializiong and understand the world 
+ : 사회적이고 유머러스한 부분을 캐치해내는 능력에 대한 연구
