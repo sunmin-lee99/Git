@@ -1,0 +1,37 @@
+[cs231n 5강 예습과제]
+
+
+CNN 기본구조
+
+Fully-connected layer : input과 weight를 곱하여 10개의 output값을 만들어내는 layer 
+(3072*1의 크기로 변환시킨 후 input값으로 설정)
+
+Convolution layer : input값의 원형을 보존한 상태로 둠
+(사진이라면, 사진 크기 그대로 보존)
+- activation map : 사진이 가지는 특성을 나타내주는 역할
+(여러개의 필터를 사용할때마다 추가되는 activation map 개수)
+
+=> Convolutional layer와 activation function의 조합이 연달아 나오는 형식의 network
+
+
+Filter : 사진의 특징들에 대한 정보를 얻어내는 역할
+(간단한 특징들에서 시작해 가면 갈수록 더욱더 복잡하고 정교한 특징들을 얻어냄)
+
+Stride : 미는 정도
+
+Padding : 이미지의 가장자리 부분에 어떤 숫자들을 채워넣는것
+(가장자리에 0을 넣는 zero pad가 일반적)
+-> 계속되는 convolution 과정에서 사진의 크기를 그대로 유지시켜주는 역할
+
+Pooling : activation map의 크기를 downsampling하는 과정
+(즉, 이미지의 크기를 줄이는 것)
+-> pooling을 통해 activation map의 크기가 반으로 줄어들면 속도가 빨라짐
+- Max pooling
+
+
+
+
+
+
+
+
