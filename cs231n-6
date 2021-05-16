@@ -1,0 +1,17 @@
+<cs231n 6강 예습 과제>
+
+Sigmoid 함수 : 가장 전통적인 activation function
+- 단점 : Vanishing Gradient Problem
+
+Relu 함수 : 가장 대표적인 CNN에서 쓰이는 activation function
+
+Leakyy ReLu 함수 : ELU와 같은 함수이지만 계산 비용이 훨씬 많이들고 기울기가 0으로
+가버리므로 의미가 없다
+
+Maxout Neuron : Vanishing Gradient Problem 해결
+
+
+layer가 deep해질수록 행렬을 곱해주는 형태를 띰
+
+표준편차가 1인 정규분포로 초기화 가능
+
