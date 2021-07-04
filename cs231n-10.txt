@@ -1,0 +1,38 @@
+[cs231n 10강 요약]
+
+(1) RNN 
+: handling variable sized sequence data that allow us to pretty naturally capture 
+all of these different types of setups in our models
+- 시퀀스 길이에 관계없이 인풋과 아웃풋을 받아들일 수 있는 네트워크 구조며, 
+필요에 따라 다양하고 유연하게 구조를 만들 수 있음
+- 히든 노드가 방향을 가진 엣지로 연결되어 순환 구조를 이루는 인공신경망의 한 종류
+- fixed size input과 fixed size output을 가지는 몇 문제점이 있지만,
+RNN은 그래도 유용함
+- Sequential Processing of Non-Sequence Data
+- Classify images by taking a series of “glimpses”
+- function과 parameter들은 모든 time step마다 동일하게 사용
+
+(2) RNN Computational Graph (Many to Many)
+- \(y_{t}\) : class scores
+- \(L_{t}\) : loss
+- \(L\) : sum of individual losses
+=> final hidden state는 전체 sequence의 모든 context를 요약한 정보를 가지고 있dma
+(Seq2Seq Model, Machine Translation, Many to one과 one to Many의 조합, Encoder + Decoder)
+
+(3) Train 과정
+- 모든 Timestep에서 다음에 올 단어를 예측하고 오차를 Cross Entropy로 구함
+- RNN은 매우 느리고 converge되지 않음 -> 많은 memory를 사용 (RNN의 단점)
+- 느린 속도를 극복하기 위해 배치별로 나눠서 진행
+- caption : variably length sequence
+- CNN에서 나온 것을 hidden layer의 초기값으로 설정
+- RNN과 Computer Vision의 조합은 Cool
+- RNN에선 2~3개의 layer를 쌓는 것이 일반적
+
+(4) Vanilla RNN
+- 형태 :  Exploding gradients/Vanishing gradients 문제
+- Exploding gradients의 경우 Gradient clipping을 사용
+- Gradient의 L2 norm이 기준 값을 초과할 때 (threshold/L2 norm)을 곱해주는 것
+- forget gate가 매번 달라지기 때문에 vanishing gradient 문제가 발생하지 않음
+
+
+
