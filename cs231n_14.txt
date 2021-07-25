@@ -1,0 +1,10 @@
+[cs231n 14강 예습과제]
+Agent : 환경에서 행동을 취하는 주제
+- 행동에 따른 적절한 보상
+MDP : 강화학습 수삭화
+가치함수 : 누적 보상함수의 기댓값
+Q-learning : 행동 가치 함수를 추진하기 위한 함수 근사를 이용
+- 함수 근사 = DNN
+Policy gradient : 미래에 받을 보상의 누적 합의 기댓값
+Reinforce algorithm : 경로에 대한 미래 보상의 기댓값
+Actor-critic algorithm 
